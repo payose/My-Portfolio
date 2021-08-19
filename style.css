@@ -53,12 +53,19 @@ body{
   cursor: pointer;
 }
 
+@media screen  and (max-width: 480px){
+  .hero-section .hero-text .hero-resume-button{
+    width: 30vw;
+  }
+
+}
+
 .hero-section .hero-text .hero-resume-button:hover{
   background-color: #ffffff44;
 }
 
 @media screen  and (min-width: 480px){
-  .hero-section{
+  .hero-section, main section .section-container{
     flex-direction: row;
   }
 
@@ -82,8 +89,8 @@ main section{
 main section .section-container{
   width: 80%;
   display: flex;
+  flex-direction: column;
 }
-
 
 .line-height{
   line-height: 250%;
@@ -93,7 +100,6 @@ main section .section-container h3{
   top: 0;
   margin-right: 10vw;
   font-weight: 100;
-
 }
 
 main section.about{
