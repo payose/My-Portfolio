@@ -47,16 +47,24 @@ body{
   color: #b6acac;
   font-size: 1.2rem;
   padding:  15px 20px;
+  margin: 0 10px;
   background-color: transparent;
   border: 2px solid #b6acac;
   text-decoration: none;
   cursor: pointer;
 }
 
-@media screen  and (max-width: 480px){
-  .hero-section .hero-text .hero-resume-button{
-    width: 30vw;
+@media screen  and (max-width: 560px){
+  .hero-section .hero-text .hero-button{
+    display: flex;
+    flex-direction: column;
   }
+
+  .hero-section .hero-text .hero-button a{
+    margin-bottom: 20px;
+
+  }
+
 
 }
 
