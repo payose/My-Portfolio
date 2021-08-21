@@ -1,0 +1,295 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  color: #d9d9d9;
+  background-color: #000;
+  overflow-x: hidden;
+  line-height: 1.75em;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-weight: 400; */
+}
+
+/* general styles edited bootstrap */
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f1f1f1;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #f1f1f1;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #f9f9f99c;
+}
+
+.button-primary, .button-secondary, button, input[type="button"], input[type="submit"], .wp-block-button .wp-block-button__link {
+  display: inline-block;
+  position: relative;
+  padding: .8em 2.1em;
+  margin-bottom: .75em;
+  margin-right: .25em;
+  font-size: 1em;
+  line-height: 1.2;
+  border: 0;
+  outline: 0;
+  border: 2px solid hsl(244deg 100% 70%);
+  color: hsl(0deg 0% 13%);
+  text-shadow: none;
+  background-color: hsl(0deg 0% 100%);
+  border-radius: 30px;
+  font-family: 'Poppins',Helvetica,sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 22%);
+}
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid hsl(0deg 0% 0% / 0%);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* border-radius: .25rem; */
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.button:focus, .button:hover {
+  text-decoration: none;
+}
+.button-primary, .button-secondary, button, input[type="button"], input[type="submit"], .wp-block-button .wp-block-button__link {
+  color: hsl(0deg 0% 100%);
+  background-color: transparent;
+  box-shadow: 0 10px 10px -8px #222121;
+}
+
+.button-primary {
+  color: hsl(0deg 0% 100%);
+  border-color: hsl(211deg 100% 50%);
+}
+
+.button-primary:hover, .button-primary:focus, button:hover, button:focus, input[type="button"]:hover{
+  background-color: hsl(209deg 100% 46%);
+}
+
+.button-secondary {
+  border-color: hsl(0deg 0% 84%);
+  box-shadow: 0 10px 10px -8px #222121;
+  color: #666666;
+}
+
+.button-secondary:hover, .button-secondary:focus {
+  color: #000;
+  border-color: hsl(0deg 0% 84%);
+  background-color: #d6d6d6;
+}
+
+/* hero section */
+
+.hero-img{
+  border: 18px solid #252525;
+  box-shadow: 0 0 25px 0 #252525
+}
+
+/* resume section */
+
+.content-area {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+}
+
+.page-title {
+  display: block;
+  position: relative;
+  border-top: 2px solid #252525;
+  border-bottom: 2px solid #252525;
+  padding: 65px 120px;
+  margin:0 -120px;
+  text-align: left;
+}
+
+.page-title .page-subtitle {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 70px;
+}
+
+@media only screen and (max-width: 768px){
+
+  .page-title{
+    margin: 0 -20px;
+    padding: 20px;
+  }
+  .page-title .page-subtitle {
+    position: relative;
+    right: auto;
+  }
+  .content-area {
+    display: block;
+    text-align: center
+  }
+}
+
+@media only screen and (min-width: 767px){
+
+  .page-content.single-post {
+      max-width: 1320px;
+      margin: 0 auto;
+  }
+  .site-content.single-post {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+.block-title h2, h3.comment-reply-title {
+  display: inline-block;
+  position: relative;
+  font-size: 21px;
+  margin: 0 0 30px;
+  z-index: 1;
+  padding-bottom: 7px;
+}
+
+.block-title h2:before, h3.comment-reply-title:before {
+  background-color: #252525;
+}
+
+.block-title h2:before, h3.comment-reply-title:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  background-color: #252525;
+  height: 2px;
+  bottom: 0;
+}
+
+.block-title h2:after, h3.comment-reply-title:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 30px;
+  background-color: hsl(244deg 100% 70%);
+  height: 2px;
+  bottom: 0;
+}
+
+.timeline {
+  border-color: hsl(0deg 0% 16%);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 25px 0 20px 40px;
+}
+
+.timeline-item:first-child {
+  padding-top: 3px;
+}
+
+.timeline-item:before, .timeline-item:after {
+  background-color: #383333;
+}
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  /* background-color: hsl(225deg 25% 97%); */
+  width: 1px;
+  left: 15px;
+  bottom: 5px;
+}
+
+.timeline-item h5.item-period {
+  color: hsl(0deg 0% 84%);
+  background-color: hsl(0deg 0% 13%);
+}
+
+.timeline-item h5.item-period {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 5px -40px;
+  color: #d6d6d6;
+  background-color: black;
+  padding: 0 10px;
+  line-height: 23px;
+  border: 2px solid hsl(244deg 100% 70%);
+  border-radius: 30px;
+}
+
+
+.timeline-item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  /* background-color: hsl(225deg 25% 97%); */
+  width: calc(100% - 15px);
+  left: 15px;
+  bottom: 3px;
+}
+
+.timeline-item:after:last-child {
+display: none;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.timeline-item .text {
+  font-size: .92em;
+}
+
+.timeline-item .item-company {
+  color: hsl(0deg 0% 67%);
+}
+.timeline-item .item-company {
+  display: inline-block;
+  font-size: 12px;
+  color: hsl(0deg 0% 40%);
+  opacity: .7;
+  margin-left: 5px;
+}
+.timeline-item .item-title {
+  font-size: 16px;
+  margin: 10px 0 7px;
+}
+
+
+.timeline-item p, .timeline-item p>*, .timeline-item .text {
+  font-size: .8em;
+  font-weight: 300;
+}

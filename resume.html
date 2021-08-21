@@ -4,125 +4,119 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Iniobong Pius</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
 </head>
 <body>
-  <!------------------- HERO SECTION -------------------------->
-  <section class="hero-section">
-    <div class="hero-image-container">
-      <img src="./assets/hero-image.jpg" alt="portrait of myself" class="hero-image">
-    </div>
-    <div class="hero-text">
-      <h2 class="hero-name">INIOBONG PIUS UMOUMAN</h2>
-      <h4 class="hero-role">Frontend software Engineer</h4>
-      <div class="hero-button">
-        <a href="./assets/resume.pdf" class="hero-resume-button">Download Resume</a>
-        <!-- <a href="./name-app.html" class="hero-resume-button">Hello game</a> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#"><img src="./assets/images/whitelogo.png" alt=""> <span class="fw-bold">Iniobong</span>  Pius</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav flex-row">
+          <a class="nav-link px-4 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link px-4" href="#">About me</a>
+          <a class="nav-link px-4" href="#">Contact</a>
+        </div>
       </div>
-     
     </div>
-  </section>
+  </nav>
 
   <main>
-    <!------------------- ABOUT SECTION -------------------------->
-    <section class="about">
-      <div class="section-container">
-        <h3>ABOUT</h3>
-        <p class="line-height">I am a Front-end engineer with two years active programming and one year of experience in the software industry. My concentration has been on Vue and Nuxt, I also write and try to improve my nodejs skills at leisure.</p>
-      </div>
-    </section>
-
-    <!------------------- WORK SECTION -------------------------->
-    <section class="work">
-      <div class="section-container">
-        <h3>WORK</h3>
-        <div class="work-experience-container">
-          <div class="work-experience">
-            <div class="work-details">
-              <h3 class="work-role section-sub-title">Frontend Engineer</h3>
-              <h4 class="work-place section-mini-title">Sharevue</h4>
-              <ul class="work-description line-height">
-                <li>Created front end of web apps as specified in their UI design, paying strict attention to details.</li>
-                <li>Single handedly rebuilt the company’s web app to achieve mobile-first responsiveness and Search engine optimisation by utilizing semantic markup, media queries, bootstrap and javascript.</li>
-                <li>Ensured the scalability of a client’s business web application by integrating vue.js, axios and vuex to the formerly vanilla javascript based web app.</li>
-                <li>Collaborated with business owners to recommend, implement and deploy front end designs, tailored to suit their business needs.</li>
-              </ul>
-            </div>
-            <div class="work-period">
-              <p>JULY 2020 - CURRENT</p>
-            </div>
+    <section>
+      <div class="container col-xxl-8">
+        <div class="row align-items-center justify-content-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-5">
+            <img src="./assets/images/hero.png" class=" hero-img d-block float-md-end img-fluid rounded-circle" alt="Bootstrap Themes" width="300" height="300" loading="lazy">
           </div>
-
-          <div class="work-experience">
-            <div class="work-details">
-              <h3 class="work-role section-sub-title">Tech Educator</h3>
-              <h4 class="work-place section-mini-title">Daveshoope Webmasters</h4>
-              <ul class="work-description line-height">
-                <li>Guiding and tutoring children between ages 6-15 on programming  with html and css.</li>
-                <li>Tutored the children on how to use tools such as code.org, scratch and kodu, aimed at developing creative thinking and problem solving abilities while focusing on programming.</li>
-              </ul>
-            </div>
-            <div class="work-period">
-              <p>JULY 2019 - DECEMBER 2019</p>
+          <div class="col-lg-6">
+            <small>Frontend engineer</small>
+            <h1 class="display-5 fw-bold lh-1 mb-3">Iniobong Pius</h1>
+            <small class="">I am a Front-end engineer with two years active programming and one year of experience in the software industry. My concentration has been on Vue and Nuxt, I also write and try to improve my nodejs skills at leisure.</small>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
+              <a href="./assets/images/resume.pdf" class="button button-primary btn-lg px-4 me-md-2">Download resume</a>
+              <a href="" class="button button-secondary btn-lg px-4 me-md-2">Contact</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!------------------- WORK SECTION -------------------------->
-    <section class="about">
-      <div class="section-container">
-        <h3 style="margin-right: 6.8vw;">EDUCATION</h3>
-        <div style="">
-          <h3 class="section-sub-title">B.Engr in Computer Engineering</h3>
-          <h4 class="section-mini-title">University of Uyo, Uyo.</h4>
-          <small>2015-2021</small>
+   <!-- ---------------------resume block ------------------------------>
+    <section class="container">
+      <div id="primary" class="content-area">
+        <div class="page-title">
+          <h1>Resume</h1>                               
+          <div class="page-subtitle">
+          <h4 class="fw-lighter"> 2 Years of Experience</h4>
         </div>
       </div>
     </section>
 
- <!--    <section class="work">
-      <div class="section-container">
-        <h3>EDUCATION</h3>
-        <div class="work-experience-container">
-          <div class="work-experience">
-            <div class="work-details">
-              <h3 class="work-role section-sub-title">B.Engr in Computer Engineering</h3>
-              <h4 class="work-place section-mini-title">University of Uyo, Uyo.</h4>
+   <!-- ---------------------EDUCATION AND EXPERIENCE block ------------------------------>
+
+    <article class="page type-page status-publish hentry">
+      <div class="container py-5">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 ">
+            <div id="col_inner_c963db795ac67e0d3fa13f175cb0eb93" class="my-3 fw-col-inner" data-paddings="0px 0px 0px 0px">
+              <div class="block-title">
+                <h2>Education</h2>
+              </div>
+              <div id="content" class="page-content site-content single-post" role="main"></div>
+                <div id="timeline-61211721e02af" class="timeline clearfix">
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">2015 - 2021</h5>
+                    <span class="item-company">University of Uyo</span>
+                    <h4 class="item-title">Computer Engineering</h4>
+                    <div class="text">
+                      Just concluded my studies for the award of a B.Engr in Computer Engineering. I major in Software Engineering.
+                    </div>
+                  </div>
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">2015</h5>
+                    <span class="item-company">Jetsi Academy</span>
+                    <h4 class="item-title">Computer Appreciation</h4>
+                    <div class="text">
+                      Awarded a diploma in computer appreciation and aplication. Obtained basic skills of computer literacy. 
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="work-period">
-              <p>2015 - 2021</p>
+            <div class=" col-xs-12 col-sm-6 ">
+              <div id="col_inner_e5046c43b19e9d4f1d6ce16928d0899a" class="my-3 fw-col-inner" data-paddings="0px 0px 0px 0px">
+                <div class="block-title">
+                  <h2>Experience</h2>
+                </div>
+                <div id="timeline-61211721e059d" class="timeline clearfix">
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period current">JUL 2020 - CURRENT</h5>
+                    <span class="item-company">Sharevue D.A</span>
+                    <h4 class="item-title">Frontend Engineer</h4>
+                    <div class="text">
+                      Creating responsive front end of web apps as specified in their UI design, paying strict attention to details. Worked with HTML, CSS, Javascript and Vuejs
+                    </div>
+                  </div>
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">JUL 2019 - DEC 2019</h5>
+                    <span class="item-company">Daveshoope Webmasters</span>
+                    <h4 class="item-title">Tech Educator</h4>
+                    <div class="text">
+                      Guiding and tutoring children between ages 6-15 on programming with html and css. And on how to use tools such as scratch and kodu, aimed at developing creative thinking.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <section class="brands">
-      <h3 class="section-sub-title">Amazing brands I have worked with</h3>
-      <div class="brand-container">
-        <a href="https://ingressive.org/" target="_blank"><img src="./assets/i4gg.png" alt="hotles.ng logo" ></a>
-        <a href="https://hng.tech/" target="_blank"><img src="./assets/hng.png" alt="HNG internship logo" ></a>
-        <a href="https://zuri.team/" target="_blank"><img src="./assets/zuri.svg" alt="zuri.internship logo" ></a>
-      </div>
-    </section>
+    </article>
   </main>
 
-  <footer>
-    <a href="inipayose@gmail.com">inipayose@gmail.com</a>
-    <p>08133574507</p>
-    <div class="social-links">
-      <a href="https://twitter.com/PiusIniobong"><img src="./assets/twitter-brands.svg" alt="twitter handle" class="social-handles"></a>
-      <a href="https://github.com/payose"><img src="./assets/github-brands.svg" alt="github handle" class="social-handles"></a>
-      <a href="https://linkedin.com/in/piusiniobong"><img src="./assets/linkedin-in-brands.svg" alt="twitter handle" class="social-handles"></a>
-      <a href="https://pye.hashnode.dev/"><img src="./assets/blog-solid.svg" alt="my blog" class="social-handles"></a>
-    </div>
-  </footer>
-  
 </body>
 </html>
