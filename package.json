@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "my portfolio site",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payose/zuri-hng.git"
+  },
+  "keywords": [
+    "portfolio",
+    "vuejs",
+    "nodejs",
+    "front-end",
+    "back-end",
+    "full-stack"
+  ],
+  "author": "Pius Iniobong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/payose/zuri-hng/issues"
+  },
+  "homepage": "https://github.com/payose/zuri-hng#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^88.2.0",
+    "nodemailer": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
