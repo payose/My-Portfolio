@@ -15,7 +15,7 @@ const app = express()
 app.use(express.static ('public'))
 app.use(express.json())
 
-// const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
   res.sendFile('./public/index.html', {root: __dirname})
@@ -88,6 +88,6 @@ app.post('/', (req, res) =>{
 })
 
 // app.listen(PORT)
-app.listen(5000,console.log("Listening on Port 5000"))
+app.listen(PORT,console.log("Listening on Port 5000"))
 
 
