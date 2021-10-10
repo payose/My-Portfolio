@@ -40,7 +40,7 @@ app.post('/', (req, res) =>{
     to: config.user,
     subject: `${req.body.fullname} | ${req.body.email} | ${req.body.subject}`,
     text: `${req.body.fullname} | ${req.body.email} | ${req.body.message}`,
-    html : "Hello,<br> You received this email because you filled out the contact form on my portfolio site <a href="+link+">my portfolio site</a>.<br>This is an automated message, but I will get back to you soonest.<br>Enjoy the rest of your day!"	
+    // html : "Hello,<br> You received this email because you filled out the contact form on my portfolio site <a href="+link+">my portfolio site</a>.<br>This is an automated message, but I will get back to you soonest.<br>Enjoy the rest of your day!"	
   }
 
   transporter.sendMail(mailOptions, (error, info) => {
