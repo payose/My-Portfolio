@@ -5,11 +5,11 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/payose/zuri-hng.git"
+    "url": "git+https://github.com/payose/My-Portfolio.git"
   },
   "keywords": [
     "portfolio",
@@ -22,9 +22,9 @@
   "author": "Pius Iniobong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/payose/zuri-hng/issues"
+    "url": "https://github.com/payose/My-Portfolio/issues"
   },
-  "homepage": "https://github.com/payose/zuri-hng#readme",
+  "homepage": "https://github.com/payose/My-Portfolio#readme",
   "dependencies": {
     "express": "^4.17.1",
     "googleapis": "^88.2.0",
