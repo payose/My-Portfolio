@@ -19,6 +19,9 @@ const PORT = process.env.PORT || 3000
 const accessToken = OAuth2_client.getAccessToken()
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // use SSL
   auth: {
     type: 'OAuth2',
     user: config.user,
