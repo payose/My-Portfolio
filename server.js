@@ -3,6 +3,8 @@ import path from 'path'
 import nodemailer from 'nodemailer' 
 import {google} from 'googleapis'
 import config from './config.js'
+
+
 const __dirname = path.resolve()
 const OAuth2 = google.auth.OAuth2
 
@@ -37,15 +39,12 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) =>{
-  console.log(req.body)
   const mailOptions = {
     from: req.body.email,
     to: config.user,
     subject: `${req.body.fullname} | ${req.body.email} | ${req.body.subject}`,
     text: `${req.body.fullname} | ${req.body.email} | ${req.body.message}`,
-    // html : "Hello,<br> You received this email because you filled out the contact form on my portfolio site <a href="+link+">my portfolio site</a>.<br>This is an automated message, but I will get back to you soonest.<br>Enjoy the rest of your day!"	
   }
-
   transporter.sendMail(mailOptions, (error, info) => {
     if(error){
       console.log(error)
@@ -61,11 +60,24 @@ app.post('/', (req, res) =>{
 
 app.get('/send',function(req,res){
 	const mailOptions={
+		// to : req.body.email,
 		to : req.query.to,
 		subject : "THANKS FOR CONTACTING INIOBONG PIUS",
-		html : "Hello,<br><br> You received this email because you filled out the contact form on my portfolio site <a href="+link+">my portfolio site</a>.<br>This is an automated message, but I will get back to you soonest.<br>Enjoy the rest of your day!"	
+		html : "Hello,<br><br> You received this email because you filled out the contact form on my <a href="+link+">my portfolio site</a>.<br>This is an automated message, but I will get back to you soonest.<br>Enjoy the rest of your day!"	
 	}
 	console.log(mailOptions);
+  console.log(req.query)
+  console.log(req.body)
+
+  // verify connection configuration
+  transporter.verify(function (error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Server is ready to take our messages");
+    }
+  })
+
 	transporter.sendMail(mailOptions, function(error, response){
    	if(error){
       console.log("error message :" + error);
