@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$("#send_email").click(function(){		
 		to=$("#email").val();		
 		$("#message").text("Sending E-mail...Please wait");
-		$.get("http://localhost:3000/send",{to:to},function(data){
+		$.get("https://piusiniobong.herokuapp.com/send",{to:to},function(data){
 		if(data=="sent")
 		{
 			$("#message").empty().html("<p>Email is been sent at "+to+" . Please check inbox !</p>");
